@@ -1,0 +1,32 @@
+title: ProSoftware Hub
+description: >-
+  Verified Windows Applications & Desktop Clients.
+  Download crypto wallets, trading terminals, DeFi tools, system utilities & multimedia software.
+  Safe installers, setup guides & full versions for Windows 10/11 x64.
+baseurl: ""
+url: ""
+permalink: pretty
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+collections:
+  categories:
+    output: true
+    permalink: /categories/:name/
+  products:
+    output: true
+    permalink: /products/:path/
+defaults:
+  - scope:
+      path: ""
+      type: "categories"
+    values:
+      layout: "category"
+  - scope:
+      path: ""
+      type: "products"
+    values:
+      layout: "product"
